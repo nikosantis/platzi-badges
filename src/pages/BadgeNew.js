@@ -36,26 +36,19 @@ class BadgeNew extends React.Component {
     try {
       await api.badges.create(this.state.form);
       this.setState({ loading: false });
-
-      this.props.history.push('/badges');
     } catch (error) {
       this.setState({ loading: false, error: error });
     }
-  };
+  }
 
   render() {
     if (this.state.loading) {
-      return <PageLoading />;
+      return <PageLoading />
     }
-
     return (
       <React.Fragment>
         <div className="BadgeNew__hero">
-          <img
-            className="BadgeNew__hero-image img-fluid"
-            src={header}
-            alt="Logo"
-          />
+          <img className="BadgeNew__hero-image img-fluid" src={header} alt="Logo" />
         </div>
 
         <div className="container">
@@ -64,7 +57,7 @@ class BadgeNew extends React.Component {
               <Badge
                 firstName={this.state.form.firstName || 'FIRST_NAME'}
                 lastName={this.state.form.lastName || 'LAST_NAME'}
-                twitter={this.state.form.twitter || 'twitter'}
+                twitter={this.state.form.twitter || 'TWITTER'}
                 jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
                 email={this.state.form.email || 'EMAIL'}
                 avatarUrl="https://www.gravatar.com/avatar/21594ed15d68ace3965642162f8d2e84?d=identicon"

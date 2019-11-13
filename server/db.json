@@ -68,6 +68,14 @@
       "jobTitle": "Super Dog",
       "twitter": "snoopysuperdog",
       "id": "Tab9I7W"
+    },
+    {
+      "firstName": "Nikolas",
+      "lastName": "Santis",
+      "email": "nikosantis@gmail.com",
+      "jobTitle": "FrontEnd Developer",
+      "twitter": "nikosantise",
+      "id": "cbsP9sS"
     }
   ]
 }
