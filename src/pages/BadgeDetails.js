@@ -41,7 +41,7 @@ function BadgeDeatils (props) {
 
             <div>
               <button className='btn btn-danger'>Delete</button>
-              <Modal />
+              <Modal isOpen={true} onClose={props.onCloseModal}>Lorem Ipsum</Modal>
             </div>
           </div>
         </div>
